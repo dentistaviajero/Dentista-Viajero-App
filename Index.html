@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dentista Viajero App</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f7fb;
+      color: #203047;
+    }
+    header {
+      background: linear-gradient(135deg, #086fa8, #14a7ad);
+      color: white;
+      text-align: center;
+      padding: 35px 16px;
+    }
+    header h1 { margin: 10px 0; }
+    main {
+      max-width: 700px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 16px;
+      box-shadow: 0 3px 12px #00000012;
+    }
+    button {
+      background: #087fb1;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 16px;
+      width: 100%;
+      cursor: pointer;
+    }
+    button:disabled {
+      background: #9aaab4;
+      cursor: not-allowed;
+    }
+    .small { color: #64748b; font-size: 14px; }
+    footer { text-align: center; padding: 25px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-size:48px">🚐🦷</div>
+    <h1>Dentista Viajero</h1>
+    <p>Odontopediatría divertida</p>
+    <p>Consultorio fijo y móvil</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Bienvenido</h2>
+      <p>Tu espacio de trabajo para organizar la atención de pacientes y familias.</p>
+      <p class="small">Versión 0.1 | Prototipo inicial</p>
+    </div>
+
+    <div class="card">
+      <h2>👶 Pacientes</h2>
+      <p>Registro infantil, expedientes e historial clínico.</p>
+      <button disabled>Próximamente</button>
+    </div>
+
+    <div class="card">
+      <h2>🦷 Odontograma</h2>
+      <p>Seguimiento de dientes y tratamientos.</p>
+      <button disabled>Próximamente</button>
+    </div>
+
+    <div class="card">
+      <h2>🎭 Odontología Divertida</h2>
+      <p>Confianza, emociones, juego y experiencia del niño.</p>
+      <button disabled>Próximamente</button>
+    </div>
+
+    <div class="card">
+      <h2>📅 Agenda</h2>
+      <p>Citas, controles y seguimiento.</p>
+      <button disabled>Próximamente</button>
+    </div>
+
+    <div class="card">
+      <h2>🤱 Atención de partería</h2>
+      <p>Área profesional de Annie para atención materna y neonatal.</p>
+      <button disabled>Próximamente</button>
+    </div>
+  </main>
+
+  <footer class="small">
+    Dentista Viajero App
+    <p>Prototipo sin almacenamiento de datos clínicos.</p>
+  </footer>
+</body>
+</html>
