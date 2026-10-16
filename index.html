@@ -62,13 +62,13 @@
     <div class="card">
       <h2>Bienvenido</h2>
       <p>Tu espacio de trabajo para organizar la atención de pacientes y familias.</p>
-      <p class="small">Versión 0.1 | Prototipo inicial</p>
+      <p class="small">Versión 0.1 </p>
     </div>
 
     <div class="card">
       <h2>👶 Pacientes</h2>
       <p>Registro infantil, expedientes e historial clínico.</p>
-      <button onclick="abrirRegistro()">Registrar paciente de prueba</button>
+      <button onclick="abrirRegistro()">Registrar paciente </button>
     </div>
 
     <div class="card">
@@ -98,13 +98,13 @@
 
   <footer class="small">
     Dentista Viajero App
-    <p>Prototipo sin almacenamiento de datos clínicos.</p>
+    <p>Almacenamiento de datos de nuestro consultorio.</p>
   </footer>
   
 <section id="registro" hidden style="max-width:700px;margin:20px auto;padding:16px">
   <div class="card">
     <h2>👶 Registro infantil</h2>
-    <p class="small">DEMO: usa solamente datos inventados.</p>
+    <p class="small">Datos de paciente .</p>
 
     <form onsubmit="registrarPaciente(event)">
       <label>Nombre del niño *</label>
@@ -113,13 +113,13 @@
       <label>Fecha de nacimiento *</label>
       <input id="nacimiento" type="date" required>
 
-      <label>Padre, madre o tutor *</label>
+      <label>Nombre de Padre, madre o tutor *</label>
       <input id="tutor" required placeholder="Nombre del tutor">
 
       <label>Teléfono</label>
       <input type="tel" placeholder="Teléfono ficticio">
 
-      <label>Pediatra</label>
+      <label>Nombre del Medico o Pediatra de confianza </label>
       <input placeholder="Nombre del pediatra">
 
       <label>Escuela</label>
@@ -138,7 +138,7 @@
       </select>
 
       <label>Alertas médicas</label>
-      <textarea placeholder="Solo información ficticia"></textarea>
+      <textarea placeholder="información importante de recordar"></textarea>
 
       <button type="submit">Registrar demostración</button>
       <button type="button" onclick="cerrarRegistro()"
