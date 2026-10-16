@@ -68,7 +68,7 @@
     <div class="card">
       <h2>👶 Pacientes</h2>
       <p>Registro infantil, expedientes e historial clínico.</p>
-      <button disabled>Próximamente</button>
+      <button onclick="abrirRegistro()">Registrar paciente de prueba</button>
     </div>
 
     <div class="card">
@@ -100,5 +100,81 @@
     Dentista Viajero App
     <p>Prototipo sin almacenamiento de datos clínicos.</p>
   </footer>
+  
+<section id="registro" hidden style="max-width:700px;margin:20px auto;padding:16px">
+  <div class="card">
+    <h2>👶 Registro infantil</h2>
+    <p class="small">DEMO: usa solamente datos inventados.</p>
+
+    <form onsubmit="registrarPaciente(event)">
+      <label>Nombre del niño *</label>
+      <input id="nombre" required placeholder="Ej. Pippo Pérez">
+
+      <label>Fecha de nacimiento *</label>
+      <input id="nacimiento" type="date" required>
+
+      <label>Padre, madre o tutor *</label>
+      <input id="tutor" required placeholder="Nombre del tutor">
+
+      <label>Teléfono</label>
+      <input type="tel" placeholder="Teléfono ficticio">
+
+      <label>Pediatra</label>
+      <input placeholder="Nombre del pediatra">
+
+      <label>Escuela</label>
+      <input placeholder="Escuela">
+
+      <label>¿Cómo nos conoció?</label>
+      <select>
+        <option>Seleccionar</option>
+        <option>Facebook</option>
+        <option>Recomendación</option>
+        <option>Escuela</option>
+        <option>DIF</option>
+        <option>Google</option>
+        <option>Combi</option>
+        <option>Otro</option>
+      </select>
+
+      <label>Alertas médicas</label>
+      <textarea placeholder="Solo información ficticia"></textarea>
+
+      <button type="submit">Registrar demostración</button>
+      <button type="button" onclick="cerrarRegistro()"
+        style="margin-top:10px;background:#64748b">
+        Cancelar
+      </button>
+    </form>
+  </div>
+</section>
+
+<section class="card" style="max-width:668px;margin:20px auto">
+  <h2>📋 Resultado</h2>
+  <p id="resultado">Todavía no hay registro de prueba.</p>
+</section>
+
+<style>
+  #registro label {
+    display:block;
+    font-weight:bold;
+    margin:14px 0 6px;
+  }
+  #registro input,
+  #registro select,
+  #registro textarea {
+    width:100%;
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:9px;
+    font-size:16px;
+    margin-bottom:6px;
+  }
+  #registro textarea { min-height:80px; }
+  #registro[hidden] { display:none; }
+</style>
+
+<script src="app.js"></script>
+  
 </body>
 </html>
