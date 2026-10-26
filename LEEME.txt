@@ -1,0 +1,15 @@
+Dentista Viajero v0.5 - Historia clinica pediatrica
+
+SUBIR SOLO ESTOS 4 ARCHIVOS A LA RAIZ DE GitHub:
+- index.html (reemplazar)
+- sw.js (reemplazar)
+- historia-clinica.js (nuevo)
+- historia-clinica.css (nuevo)
+
+NO borrar app.js, styles.css, imagenes, iconos, manifest ni archivos existentes.
+No subir LEEME.txt si no lo deseas.
+
+IMPORTANTE: Antes de instalar, exporta el respaldo de pacientes y escuelas desde la app.
+Esta version sigue siendo DEMOSTRACION con localStorage, sin cifrado ni base de datos privada. NO USAR CON DATOS REALES DE PACIENTES.
+Los campos nuevos se guardan dentro de los objetos de pacientes existentes en localStorage.
+La ficha muestra arriba gustos y alertas; las notas aparecen al final.
